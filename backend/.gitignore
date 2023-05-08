@@ -1,0 +1,14 @@
+/venv
+/.idea
+__pycache__
+/byled/db.sqlite3
+.env
+/byled/uploads
+/logs
+/.docker
+/byled/celerybeat-schedule
+/export-templates/renderers
+/backup.zip
+*.pdf
+app.py
+backups

@@ -1,0 +1,321 @@
+/* DEBUG COLORS */
+/*div {*/
+/*    background-color: black;*/
+/*}*/
+
+/*table {*/
+/*    background-color: aqua;*/
+/*}*/
+
+/*tr {*/
+/*    background-color: chartreuse;*/
+/*}*/
+
+/*th {*/
+/*    background-color: blueviolet;*/
+/*}*/
+
+/*td {*/
+/*    background-color: brown;*/
+/*}*/
+/*img {*/
+/*    background-color: cornsilk;*/
+/*}*/
+/*p {*/
+/*    background-color: darkkhaki;*/
+/*}*/
+/*p {*/
+/*    background-color: darkkhaki;*/
+/*}*/
+
+
+/* END DEBUG COLORS */
+
+table, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+}
+
+/* Header */
+
+.header {
+    margin-top: 20mm;
+}
+
+.header-row {
+    width: 100%;
+}
+
+.header-bottom-border {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}
+
+.header-logo {
+    height: 40pt;
+    width: auto;
+    display: inline-block;
+}
+
+.header-logo > img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    display: inline-block;
+}
+
+
+.header-title {
+    width: fit-content;
+    /*display: inline-block;*/
+    margin: 0px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.header-title-name {
+    font-size: 36pt;
+    margin-left: 20px;
+}
+
+.header-title-longname {
+    margin-left: 10px;
+    margin-top: 12pt;
+    font-size: 8pt;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.header-title-longname > div {
+    display: block;
+
+}
+
+
+.header-info {
+    height: 100%;
+    vertical-align: middle;
+    font-size: 10pt;
+    width: fit-content;
+    display: inline-block;
+    margin: 0;
+    float: right;
+    text-align: right;
+}
+
+.header-info-icon {
+    width: 16px;
+    height: auto;
+    margin-left: 15px;
+}
+
+.row-center {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.row-center > img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.row-center > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-document-name {
+    font-size: 12pt;
+    display: block;
+    margin-top: 16pt;
+    margin-bottom: 16pt;
+
+
+}
+
+/* Section */
+.section-name {
+    width: 100%;
+    text-align: left;
+    font-size: 12pt;
+
+
+}
+
+.section-table-header {
+    margin-top: 40pt;
+    padding-top: 10px;
+    width: 100%;
+    font-size: 6pt;
+
+}
+
+.section-table-column-number {
+    width: 5%;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.section-table-column-vendor-code {
+    width: 10%;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.section-table-column-photo {
+    width: 15%;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    vertical-align: top;
+    display: inline-block;
+
+}
+
+.section-table-column-description {
+    width: 30%;
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+
+}
+
+.section-table-column-count {
+    width: 10%;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+}
+
+
+.section-table-column-price {
+    width: 8%;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.section-table-column-discount {
+    width: 8%;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.section-table-column-amount {
+    float: right;
+    margin-right: 10px;
+    text-align: right;
+    vertical-align: top;
+    display: inline-block;
+
+
+}
+
+/* Section table project */
+
+.section-table-project {
+    box-sizing: border-box;
+    width: 100%;
+
+    padding: 6px 10px;
+    padding-right: 0px;
+
+    font-size: 10pt;
+    background-color: #FFD !important;
+
+    border-bottom: 1px solid #000 !important;;
+    /*page-break-inside: avoid;*/
+    display: inline-block;
+
+}
+
+.section-table-column-project-name {
+    display: inline-block;
+}
+
+/* Section table room */
+
+.section-table-room {
+    width: 100%;
+    padding: 4px 20px;
+    padding-right: 0px;
+    font-size: 8pt;
+    box-sizing: border-box;
+    background-color: #E8E8E8 !important;
+    /*page-break-inside: avoid;*/
+    display: inline-block;
+
+}
+
+.section-table-column-room-name {
+    display: inline-block;
+}
+
+/* Area */
+
+.section-table-area {
+    width: 100%;
+    padding: 4px 30px;
+    padding-right: 0px;
+    font-size: 8pt;
+    border-bottom: 1px solid #7b7b7b;
+
+    box-sizing: border-box;
+    background-color: #F0F0F0 !important;;
+    /*page-break-inside: avoid;*/
+    display: inline-block;
+
+
+}
+
+.section-table-column-area-name {
+    display: inline-block;
+}
+
+/* Product */
+
+.section-table-product {
+    width: 100%;
+    padding-top: 15px;
+    /*padding: 15px;*/
+    /*align-items: center;*/
+    box-sizing: border-box;
+
+    /*page-break-inside: avoid;*/
+
+    font-size: 8pt;
+}
+
+.section-table-column-photo > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+/* Table total */
+.table-total {
+    /*page-break-inside: avoid !important;*/
+    /*page-break-after: auto;*/
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #FFD !important;
+    display: block;
+
+
+    border-top: 1px solid #000 !important;;
+    width: 100%;
+    font-size: 10pt;
+}
+
+table, tr, td, th, tbody, thead, tfoot {
+    /*page-break-inside: avoid !important;*/
+}
+

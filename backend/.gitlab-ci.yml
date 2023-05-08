@@ -1,0 +1,29 @@
+stages:
+  - build
+  - up
+
+
+dev-build:
+  stage: build
+  before_script:
+    - docker-compose -f dev.yml down
+  script:
+    - sudo docker-compose -f dev.yml build
+  only:
+    - develop
+  tags:
+    - byled-shell
+
+
+dev-up:
+  stage: up
+  script:
+    - docker-compose -f dev.yml up -d
+  only:
+    - develop
+  tags:
+    - byled-shell
+
+    
+
+

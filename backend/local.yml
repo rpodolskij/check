@@ -1,0 +1,65 @@
+version: "3"
+
+services:
+  nginx:
+    build: ./nginx
+    container_name: byled-local-nginx
+    ports:
+      - 8009:80
+    depends_on:
+      - web
+  db:
+    image: postgres:13.2
+    container_name: byled-local-db
+    volumes:
+      - ./.docker/db:/var/lib/postgresql/data
+    env_file:
+      .env
+    ports:
+      - 8010:5432
+  web:
+    container_name: byled-local-web
+    build:
+      context: .
+      dockerfile: ./compose/local/Dockerfile
+    env_file:
+      .env
+    command: bash -c "python3 ./byled/manage.py migrate && python3 ./byled/manage.py runserver 0.0.0.0:80"
+    volumes:
+      - .:/code
+      - ./.docker/logs:/code/logs
+    depends_on:
+      - db
+  celery-worker:
+    container_name: byled-local-celery-worker
+    build:
+      context: .
+      dockerfile: ./compose/local/Dockerfile
+    env_file:
+      .env
+    command: bash -c "cd byled && celery -A byled worker"
+    volumes:
+      - .:/code
+      - ./.docker/logs:/code/logs
+    depends_on:
+      - db
+  celery-beat:
+    container_name: byled-local-celery-beat
+    build:
+      context: .
+      dockerfile: ./compose/local/Dockerfile
+    env_file:
+      .env
+    command: bash -c "cd byled && celery -A byled beat"
+    volumes:
+      - .:/code
+      - ./.docker/logs:/code/logs
+    depends_on:
+      - db
+  rabbitmq:
+    image: rabbitmq:3.8-management
+    container_name: byled-local-rabbitmq
+    volumes:
+      - ./.docker/rabbitmq:/bitnami
+    ports:
+      - 15673:15672

@@ -1,0 +1,11 @@
+/venv
+/.idea
+__pycache__
+/byled/db.sqlite3
+.env
+/byled/uploads
+/uploads
+/byled/uploads
+/.docker
+backups
+app.py

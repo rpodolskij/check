@@ -1,0 +1,459 @@
+{
+    "rows": [
+        {
+            "Group_ID": "2a001bbc-e482-11eb-bb01-4ccc6a42cb23",
+            "Group_Name": "Byled",
+            "Level": 0,
+            "rows": [
+                {
+                    "Group_ID": "2a74d86c-557a-11eb-bad3-4ccc6a42cb23",
+                    "Group_Name": "Cветильники Byled",
+                    "Level": 1,
+                    "rows": [
+                        {
+                            "Group_ID": "af4219f7-2288-11eb-bac0-4ccc6a42cb23",
+                            "Group_Name": "CRATER",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "943f1876-cca0-11ed-bb45-4ccc6a42cb23",
+                            "Group_Name": "Eclipse",
+                            "Level": 2,
+                            "rows": [
+                                {
+                                    "Group_ID": "a7d1738e-cca0-11ed-bb45-4ccc6a42cb23",
+                                    "Group_Name": "Светильники",
+                                    "Level": 3,
+                                    "rows": []
+                                },
+                                {
+                                    "Group_ID": "a0b01c84-cca0-11ed-bb45-4ccc6a42cb23",
+                                    "Group_Name": "Шинопровод и комплектующие",
+                                    "Level": 3,
+                                    "rows": []
+                                }
+                            ]
+                        },
+                        {
+                            "Group_ID": "44fdb964-557a-11eb-bad3-4ccc6a42cb23",
+                            "Group_Name": "FLARE",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "ce959354-45ec-11eb-bac9-4ccc6a42cb23",
+                            "Group_Name": "GRAVITY",
+                            "Level": 2,
+                            "rows": [
+                                {
+                                    "Group_ID": "95a5a286-ea2a-11eb-bb01-4ccc6a42cb23",
+                                    "Group_Name": "MG20",
+                                    "Level": 3,
+                                    "rows": [
+                                        {
+                                            "Group_ID": "5335896e-5583-11eb-bad3-4ccc6a42cb23",
+                                            "Group_Name": "Блоки",
+                                            "Level": 4,
+                                            "rows": []
+                                        },
+                                        {
+                                            "Group_ID": "4442f789-5583-11eb-bad3-4ccc6a42cb23",
+                                            "Group_Name": "Светильники",
+                                            "Level": 4,
+                                            "rows": []
+                                        },
+                                        {
+                                            "Group_ID": "3971982b-5583-11eb-bad3-4ccc6a42cb23",
+                                            "Group_Name": "Шинопровод и комплектующие",
+                                            "Level": 4,
+                                            "rows": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Group_ID": "95a5a287-ea2a-11eb-bb01-4ccc6a42cb23",
+                                    "Group_Name": "MG35",
+                                    "Level": 3,
+                                    "rows": [
+                                        {
+                                            "Group_ID": "9f85e124-ea2a-11eb-bb01-4ccc6a42cb23",
+                                            "Group_Name": "Блоки",
+                                            "Level": 4,
+                                            "rows": []
+                                        },
+                                        {
+                                            "Group_ID": "9f85e125-ea2a-11eb-bb01-4ccc6a42cb23",
+                                            "Group_Name": "Светильники",
+                                            "Level": 4,
+                                            "rows": []
+                                        },
+                                        {
+                                            "Group_ID": "b0f7252f-ea2a-11eb-bb01-4ccc6a42cb23",
+                                            "Group_Name": "Шинопровод и комплектующие",
+                                            "Level": 4,
+                                            "rows": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Group_ID": "dc37e420-ea2a-11eb-bb01-4ccc6a42cb23",
+                                    "Group_Name": "Универсальные комплектующие MG20/35",
+                                    "Level": 3,
+                                    "rows": []
+                                }
+                            ]
+                        },
+                        {
+                            "Group_ID": "bcb7ff4e-1719-11ed-bb26-4ccc6a42cb23",
+                            "Group_Name": "GROUND",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "3ad2be7c-557a-11eb-bad3-4ccc6a42cb23",
+                            "Group_Name": "HALO",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "a393a34d-ea2c-11eb-bb01-4ccc6a42cb23",
+                            "Group_Name": "LUNA",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "90aff516-696f-11ec-bb10-4ccc6a42cb23",
+                            "Group_Name": "SATELLIT",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "dc294a16-6c9e-11ec-bb10-4ccc6a42cb23",
+                            "Group_Name": "SATURN",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "1482b40f-c48b-11ec-bb1b-4ccc6a42cb23",
+                            "Group_Name": "SOLAR",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "0120f9ae-ea2d-11eb-bb01-4ccc6a42cb23",
+                            "Group_Name": "SPOT",
+                            "Level": 2,
+                            "rows": [
+                                {
+                                    "Group_ID": "82594019-eac7-11eb-bb01-4ccc6a42cb23",
+                                    "Group_Name": "Светильники",
+                                    "Level": 3,
+                                    "rows": []
+                                },
+                                {
+                                    "Group_ID": "759daa29-eac7-11eb-bb01-4ccc6a42cb23",
+                                    "Group_Name": "Шинопровод и комплектующие",
+                                    "Level": 3,
+                                    "rows": []
+                                }
+                            ]
+                        },
+                        {
+                            "Group_ID": "5137ce3d-557a-11eb-bad3-4ccc6a42cb23",
+                            "Group_Name": "UFO",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "d624a540-2fe5-11ec-bb0c-4ccc6a42cb23",
+                            "Group_Name": "UFO-FR",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "3b48610b-c48a-11ec-bb1b-4ccc6a42cb23",
+                            "Group_Name": "UFO-ST",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "b5abd9c3-ea2c-11eb-bb01-4ccc6a42cb23",
+                            "Group_Name": "UNI",
+                            "Level": 2,
+                            "rows": [
+                                {
+                                    "Group_ID": "b9fdbe1b-eae0-11eb-bb01-4ccc6a42cb23",
+                                    "Group_Name": "Комплектующие",
+                                    "Level": 3,
+                                    "rows": []
+                                },
+                                {
+                                    "Group_ID": "5d7f2d37-eae0-11eb-bb01-4ccc6a42cb23",
+                                    "Group_Name": "Корпуса",
+                                    "Level": 3,
+                                    "rows": []
+                                },
+                                {
+                                    "Group_ID": "63b9a37e-eae0-11eb-bb01-4ccc6a42cb23",
+                                    "Group_Name": "Корпуса mini",
+                                    "Level": 3,
+                                    "rows": []
+                                },
+                                {
+                                    "Group_ID": "4dcd1e04-eae0-11eb-bb01-4ccc6a42cb23",
+                                    "Group_Name": "Модули",
+                                    "Level": 3,
+                                    "rows": []
+                                },
+                                {
+                                    "Group_ID": "57727fce-eae0-11eb-bb01-4ccc6a42cb23",
+                                    "Group_Name": "Модули mini",
+                                    "Level": 3,
+                                    "rows": []
+                                }
+                            ]
+                        },
+                        {
+                            "Group_ID": "abfc8846-ea2c-11eb-bb01-4ccc6a42cb23",
+                            "Group_Name": "VACUUM",
+                            "Level": 2,
+                            "rows": []
+                        }
+                    ]
+                },
+                {
+                    "Group_ID": "ec502a4f-d396-11e9-ba9e-4ccc6a42cb23",
+                    "Group_Name": "Блоки питания",
+                    "Level": 1,
+                    "rows": [
+                        {
+                            "Group_ID": "66cbb32b-dab4-11ed-bb48-4ccc6a42cb23",
+                            "Group_Name": "BLWX",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "cac1a808-ef16-11e9-ba9e-4ccc6a42cb23",
+                            "Group_Name": "LMWX",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "dfd136db-ef13-11e9-ba9e-4ccc6a42cb23",
+                            "Group_Name": "LMX",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "14ff9fbd-ef16-11e9-ba9e-4ccc6a42cb23",
+                            "Group_Name": "LMX DIM",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "8f823b44-d397-11e9-ba9e-4ccc6a42cb23",
+                            "Group_Name": "S",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "1887f321-4e67-11ea-baa4-4ccc6a42cb23",
+                            "Group_Name": "SL",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "3d27a59c-4e67-11ea-baa4-4ccc6a42cb23",
+                            "Group_Name": "ST",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "781711ba-d397-11e9-ba9e-4ccc6a42cb23",
+                            "Group_Name": "T",
+                            "Level": 2,
+                            "rows": []
+                        }
+                    ]
+                },
+                {
+                    "Group_ID": "6adf4cb0-d398-11e9-ba9e-4ccc6a42cb23",
+                    "Group_Name": "Лента ByLed",
+                    "Level": 1,
+                    "rows": [
+                        {
+                            "Group_ID": "144a7400-7eb7-11ec-bb10-4ccc6a42cb23",
+                            "Group_Name": "LUX",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "80899551-d398-11e9-ba9e-4ccc6a42cb23",
+                            "Group_Name": "PRO",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "30290c3f-f615-11ec-bb1d-4ccc6a42cb23",
+                            "Group_Name": "PRO 230V",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "85ae6c28-ea01-11eb-bb01-4ccc6a42cb23",
+                            "Group_Name": "Standart",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "fb1c422e-eade-11eb-bb01-4ccc6a42cb23",
+                            "Group_Name": "Коннекторы",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "d4baa242-2b5b-11ec-bb0a-4ccc6a42cb23",
+                            "Group_Name": "Термолента",
+                            "Level": 2,
+                            "rows": []
+                        }
+                    ]
+                },
+                {
+                    "Group_ID": "5e8eef30-d399-11e9-ba9e-4ccc6a42cb23",
+                    "Group_Name": "Линейки",
+                    "Level": 1,
+                    "rows": []
+                },
+                {
+                    "Group_ID": "d660ce27-5572-11eb-bad3-4ccc6a42cb23",
+                    "Group_Name": "Модули Byled",
+                    "Level": 1,
+                    "rows": []
+                },
+                {
+                    "Group_ID": "f3aa82df-5182-11ea-baa4-4ccc6a42cb23",
+                    "Group_Name": "Неон Byled",
+                    "Level": 1,
+                    "rows": [
+                        {
+                            "Group_ID": "df915c31-2990-11eb-bac3-4ccc6a42cb23",
+                            "Group_Name": "PRO",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "ade23510-556f-11eb-bad3-4ccc6a42cb23",
+                            "Group_Name": "PRO 230V",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "7be44817-ea02-11eb-bb01-4ccc6a42cb23",
+                            "Group_Name": "Standart",
+                            "Level": 2,
+                            "rows": []
+                        }
+                    ]
+                },
+                {
+                    "Group_ID": "b88f6798-1c5c-11e8-ba8a-4ccc6a42cb23",
+                    "Group_Name": "Профиль Byled",
+                    "Level": 1,
+                    "rows": [
+                        {
+                            "Group_ID": "a04a4e09-ea03-11eb-bb01-4ccc6a42cb23",
+                            "Group_Name": "Комплектующие",
+                            "Level": 2,
+                            "rows": [
+                                {
+                                    "Group_ID": "9959375b-3d93-11ed-bb2f-4ccc6a42cb23",
+                                    "Group_Name": "Комплектующие NEW",
+                                    "Level": 3,
+                                    "rows": []
+                                }
+                            ]
+                        },
+                        {
+                            "Group_ID": "8d7d2ccd-ea03-11eb-bb01-4ccc6a42cb23",
+                            "Group_Name": "Профиль",
+                            "Level": 2,
+                            "rows": [
+                                {
+                                    "Group_ID": "cefefb5f-3d90-11ed-bb2f-4ccc6a42cb23",
+                                    "Group_Name": "Профиль NEW",
+                                    "Level": 3,
+                                    "rows": []
+                                }
+                            ]
+                        },
+                        {
+                            "Group_ID": "2d194b9d-494d-11ec-bb0c-4ccc6a42cb23",
+                            "Group_Name": "Профиль LUX",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "8d7d2cce-ea03-11eb-bb01-4ccc6a42cb23",
+                            "Group_Name": "Рассеиватели",
+                            "Level": 2,
+                            "rows": [
+                                {
+                                    "Group_ID": "721a1587-3d92-11ed-bb2f-4ccc6a42cb23",
+                                    "Group_Name": "Рассеиватели NEW",
+                                    "Level": 3,
+                                    "rows": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Group_ID": "6e933dac-59c1-11ed-bb32-4ccc6a42cb23",
+                    "Group_Name": "Световые системы",
+                    "Level": 1,
+                    "rows": [
+                        {
+                            "Group_ID": "9a714ff9-3e31-11ec-bb0c-4ccc6a42cb23",
+                            "Group_Name": "SKY",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "e4281a8e-5808-11ec-bb0c-4ccc6a42cb23",
+                            "Group_Name": "SPACE Neon360",
+                            "Level": 2,
+                            "rows": []
+                        }
+                    ]
+                },
+                {
+                    "Group_ID": "69255ee7-e482-11eb-bb01-4ccc6a42cb23",
+                    "Group_Name": "Управление светом OneX",
+                    "Level": 1,
+                    "rows": [
+                        {
+                            "Group_ID": "d2b3192c-eade-11eb-bb01-4ccc6a42cb23",
+                            "Group_Name": "Датчики",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "d2b3192d-eade-11eb-bb01-4ccc6a42cb23",
+                            "Group_Name": "Контроллеры",
+                            "Level": 2,
+                            "rows": []
+                        },
+                        {
+                            "Group_ID": "dbf4d801-eade-11eb-bb01-4ccc6a42cb23",
+                            "Group_Name": "Пульты и панели",
+                            "Level": 2,
+                            "rows": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

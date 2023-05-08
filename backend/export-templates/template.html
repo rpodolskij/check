@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="file://{{assets_dir}}/style/style.css">
+    <title>ByLed | КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<section>
+    <div class="section-name">
+        {% if export_settings.specification == 'rooms' %}
+        <div style="display: block">
+            <b>Спецификация по зонами</b>
+
+        </div>
+        {% else %}
+        <div style="display: block">
+            <b>Спецификация по типам товаров</b>
+        </div>
+        {% endif %}
+        <div style="font-size: 10pt">Проект № {{ project.id }}</div>
+    </div>
+    <!-- Table header -->
+    <div class="section-table-header">
+        <div class="section-table-column-number">№</div>
+        <div class="section-table-column-vendor-code">Артикул</div>
+        {% if export_settings.include_images %}
+        <div class="section-table-column-photo">Фото</div>
+        {% endif %}
+        <div class="section-table-column-description">Описание</div>
+        <div class="section-table-column-count">Кол-во</div>
+        <div class="section-table-column-price">Цена</div>
+        {% if project.discount != 0 %}
+        <div class="section-table-column-discount">Скидка</div>
+        {% endif %}
+        <div class="section-table-column-amount">Стоимость</div>
+    </div>
+    <!-- Project -->
+    <div class="section-table-project">
+        <div class="section-table-column-project-name">{{ project.title }}</div>
+        <div class="section-table-column-amount">{{ '%0.2f' | format(project_total_amount)}}</div>
+    </div>
+    {% if export_settings.specification == 'rooms' %}
+    {% for room in rooms %}
+    <!--       Room         -->
+    <div class="section-table-room">
+        <div class="section-table-column-room-name">{{ room.title }}</div>
+        <div class="section-table-column-amount">{{ '%0.2f' | format(room.total_amount) }}</div>
+    </div>
+
+    {% for area in room.areas %}
+    <table style="width: 100%; page-break-inside: auto">
+        <thead class="report-header" style="width: 100%">
+
+        <tr>
+            <td class="report-header-cell">
+
+                <!-- Area -->
+                <div class="section-table-area">
+                    <div class="section-table-column-area-name">{{ area.title }}</div>
+                    <div class="section-table-column-amount">{{ '%0.2f' | format(area.total_amount) }}</div>
+
+                </div>
+
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+
+        {% for item in area.area_items %}
+        <tr style="max-width: 100%; overflow: hidden">
+            <td style="height: fit-content">
+                <!-- Product -->
+                <div class="section-table-product">
+                    <div class="section-table-column-number">{{loop.index}}</div>
+                    <div class="section-table-column-vendor-code">{{item.product.vendor_code or '---'}}</div>
+                    {% if export_settings.include_images %}
+                    <div class="section-table-column-photo">
+                        <img src="file://{{item.product_image}}">
+                    </div>
+                    {% endif %}
+                    <div class="section-table-column-description" style="text-align: left">
+                        <div>{{ item.product.name }}</div>
+
+                        <p>{{ item.product.description }}</p>
+                        <!--       Характеристики товаров         -->
+                        {% if export_settings.include_properties %}
+                        <p>
+
+                            {% for property in item.no_blank_properties %}
+
+                        <div style="width: 100%">
+                            <span>{{ property.name }}:</span>
+
+                            <span style="float: right">
+                                {% if type(property.value) == bool %}
+                                {% if property.value %}
+                                Да
+                                {% else %}
+                                Нет
+
+                                {% endif %}
+
+
+                                {% else %}
+                                {{ property.value }}
+                                {% endif %}
+                            </span>
+                        </div>
+                        {% endfor %}
+
+                        </p>
+                        {% endif %}
+                    </div>
+                    <div class="section-table-column-count">{{item.count}}</div>
+                    <div class="section-table-column-price">{{ '%0.2f' | format(item.product.price)}}</div>
+                    {% if project.discount != 0 %}
+                    <div class="section-table-column-discount">{{ '%0.2f' | format(item.discount)}}%</div>
+                    {% endif %}
+                    <div class="section-table-column-amount">{{ '%0.2f' | format(item.count * item.product.price) }}
+                    </div>
+                </div>
+                <!--  End product  -->
+            </td>
+        </tr>
+        {% endfor %}
+
+
+        </tbody>
+    </table>
+    {% endfor %}
+    {% endfor %}
+    {% else %}
+    {% for category in area_items_by_category.keys() %}
+    <!-- Room -->
+    <div class="section-table-room">
+        <div class="section-table-column-room-name">
+            {% if category in ['', ' ', None] %}
+            <span>Без категории</span>
+            {% else %}
+            {{ category }}
+            {% endif %}
+        </div>
+        <div class="section-table-column-amount">{{ '%0.2f' | format(area_items_by_category[category].total_amount) }}
+        </div>
+    </div>
+    {% for item in area_items_by_category[category].area_items %}
+    <!-- Product -->
+    <div class="section-table-product">
+        <div class="section-table-column-number">{{loop.index}}</div>
+        <div class="section-table-column-vendor-code">{{item.product.vendor_code}}</div>
+        {% if export_settings.include_images %}
+        <div class="section-table-column-photo">
+            <img src="{{item.product_image}}" alt="" srcset="">
+        </div>
+        {% endif %}
+        <div class="section-table-column-description" style="text-align: left">
+            <div>{{ item.product.name }}</div>
+
+            <p>{{ item.product.description }}</p>
+            <!--       Характеристики товаров         -->
+            {% if export_settings.include_properties %}
+            <p>
+
+                {% for property in item.no_blank_properties %}
+
+            <div style="width: 100%">
+                <span>{{ property.name }}:</span>
+                <span style="float: right"> {{ property.value }}</span>
+            </div>
+            {% endfor %}
+
+            </p>
+            {% endif %}
+        </div>
+        <div class="section-table-column-count">{{item.count}}</div>
+        <div class="section-table-column-price">{{ '%0.2f' | format(item.product.price)}}</div>
+        {% if project.discount != 0 %}
+        <div class="section-table-column-discount">{{ '%0.2f' | format(item.discount)}}%</div>
+        {% endif %}
+        <div class="section-table-column-amount">{{ '%0.2f' | format(item.count * item.product.price) }}</div>
+    </div>
+    <!--  End product  -->
+
+    {% endfor %}
+
+    {% endfor %}
+
+    {% endif %}
+
+    <div class="table-total">
+        <div style="margin-left: 0; width: 29%; display: inline-block; vertical-align: top">Итого:</div>
+        <div style="width: 70%; text-align: right; display: inline-block;">
+            <div>
+                {% if project.discount != 0 %}
+                <div style="display: inline-block">цена со скидкой</div>
+                {% else %}
+                <div style="display: inline-block">цена</div>
+
+                {% endif %}
+                <div style="display: inline-block; width: 150px !important;">{{ '%0.2f' | format(project_total_amount *
+                    (1.0 - project.discount
+                    / 100.0))}}
+                </div>
+            </div>
+            {% if project.discount != 0 %}
+            <div>
+                <div style="display: inline-block">скидка</div>
+                <div style="display: inline-block; width: 150px !important;">{{ '%0.2f' | format(project.discount)}}%
+                </div>
+            </div>
+            {% endif %}
+
+        </div>
+
+    </div>
+
+
+</section>
+
+</body>
+
+
+</html>

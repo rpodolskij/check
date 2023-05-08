@@ -1,0 +1,14 @@
+Django==3.1.7
+djangorestframework==3.12.2
+markdown==3.3.4
+django-filter==2.4.0
+django-cors-headers==3.7.0
+markupsafe==2.0.1
+drf-yasg==1.20.0
+Pillow==9.3.0
+celery==5.0.5
+psycopg2-binary==2.8.6
+drf-nested-routers==0.93.3
+jinja2==2.11.3
+pdfkit==0.6.1
+fpdf==1.7.2
